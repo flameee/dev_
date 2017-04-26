@@ -4,6 +4,7 @@ $servername = "localhost";
 $username = "root";
 $password = "flamenco1984";
 $dbname = "dev_";
+$abs="http://localhost/dev_/";
 $conn = mysqli_connect($servername, $username, $password, $dbname) or die("Connection failed: " . mysqli_connect_error());
 /* Database connection end */
 // storing  request (ie, get/post) global array to a variable
@@ -79,7 +80,7 @@ while( $row=mysqli_fetch_array($query) ) {  // preparing an array
     $nestedData[] = $row["last_access"];
     $nestedData[] = $user_level;
     $nestedData[] = $user_status;
-    $nestedData[] = "<a href='".$abs."/users/details/".$row['id']."' target='_blank'><i class='fa fa-search'></i> </a>";
+    $nestedData[] = "<a href='".$abs."users/details/".$row['id']."' target='_blank'><i class='fa fa-search'></i> </a>";
 
     $data[] = $nestedData;
 }
