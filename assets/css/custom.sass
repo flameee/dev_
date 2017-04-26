@@ -1,0 +1,95 @@
+/*Variabili*/
+
+//Font size
+$fsH1: 38px
+$fsH2: 28px
+$fsH3: 24px
+$fsH4: 20px
+$fsH5: 18px
+$fsP: 14px
+.fs-18
+  font-size: $fsH5
+//Font weight
+$fwThin: 100
+$fwLight: 300
+$fwNormal: 400
+$fwSemibold: 500
+$fwBold: 700
+$fwBlack: 800
+
+//Font family
+$ffMain: 'Roboto', sans-serif
+$ffSecondary: "Raleway", sans-serif
+
+//Font colors
+$fcBase: #444
+$fcMainColor: #209a9c
+$fcSuccess: #42ee02
+$fcError: #ee001f
+$fcWarning: #ee8601
+
+/*Styles*/
+
+//Margins
+.m-0-auto
+  margin: 0 auto
+.m-5-5
+  margin: 5px 5px
+.mt-50
+  margin-top: 50px
+.mb-50
+  margin-bottom: 50px
+//Paddings
+.pad-0-0
+  padding: 0
+/*Impostazioni generali per font*/
+body
+  font-family: $ffMain
+.ff-roboto
+  font-family: $ffMain
+.ff-raleway
+  font-family: $ffSecondary
+.fw-thin
+  font-weight: $fwThin
+.fw-light
+  font-weight: $fwLight
+.fw-normal
+  font-weight: $fwNormal
+.fw-semibold
+  font-weight: $fwSemibold
+.fw-bold
+  font-weight: $fwSemibold
+.fw-black
+  font-weight: $fwBlack
+
+//Colori
+.tc-danger
+  color: #d14859 !important
+.tc-main
+  color: $fcMainColor !important
+/*Impostazioni Menu*/
+.navbar
+  border-radius: 0
+
+
+/*Impostazioni form*/
+label
+  font-weight: $fwLight
+
+
+/*Background*/
+.bgc-danger
+  background-color: #d14859
+
+
+/*Impostazioni bottoni*/
+.btn
+  transition: all .5s ease-in-out
+
+
+/*Impostazioni tabelle*/
+#users-list-ajax
+  td:nth-child(8), td:nth-child(7)
+    text-align: center
+  td:last-child
+    text-align: center

@@ -1,0 +1,77 @@
+/*Variabili */
+.fs-18 {
+  font-size: 18px; }
+
+/*Styles */
+.m-0-auto {
+  margin: 0 auto; }
+
+.m-5-5 {
+  margin: 5px 5px; }
+
+.mt-50 {
+  margin-top: 50px; }
+
+.mb-50 {
+  margin-bottom: 50px; }
+
+.pad-0-0 {
+  padding: 0; }
+
+/*Impostazioni generali per font */
+body {
+  font-family: "Roboto", sans-serif; }
+
+.ff-roboto {
+  font-family: "Roboto", sans-serif; }
+
+.ff-raleway {
+  font-family: "Raleway", sans-serif; }
+
+.fw-thin {
+  font-weight: 100; }
+
+.fw-light {
+  font-weight: 300; }
+
+.fw-normal {
+  font-weight: 400; }
+
+.fw-semibold {
+  font-weight: 500; }
+
+.fw-bold {
+  font-weight: 500; }
+
+.fw-black {
+  font-weight: 800; }
+
+.tc-danger {
+  color: #d14859 !important; }
+
+.tc-main {
+  color: #209a9c !important; }
+
+/*Impostazioni Menu */
+.navbar {
+  border-radius: 0; }
+
+/*Impostazioni form */
+label {
+  font-weight: 300; }
+
+/*Background */
+.bgc-danger {
+  background-color: #d14859; }
+
+/*Impostazioni bottoni */
+.btn {
+  transition: all 0.5s ease-in-out; }
+
+/*Impostazioni tabelle */
+#users-list-ajax td:nth-child(8), #users-list-ajax td:nth-child(7) {
+  text-align: center; }
+#users-list-ajax td:last-child {
+  text-align: center; }
+
+/*# sourceMappingURL=custom.css.map */
