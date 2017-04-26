@@ -79,7 +79,7 @@ while( $row=mysqli_fetch_array($query) ) {  // preparing an array
     $nestedData[] = $row["last_access"];
     $nestedData[] = $user_level;
     $nestedData[] = $user_status;
-    $nestedData[] = "<a href='/dev/users/details/".$row['id']."' target='_blank'><i class='fa fa-search'></i> </a>";
+    $nestedData[] = "<a href='".$abs."/users/details/".$row['id']."' target='_blank'><i class='fa fa-search'></i> </a>";
 
     $data[] = $nestedData;
 }
