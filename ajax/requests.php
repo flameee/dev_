@@ -10,8 +10,8 @@ if($request_type=="change-status"){
     $id=$_POST["id"];
     $table=$_POST["table"];
     $control_field=$_POST["control-field"];
-    if($id && $table && $control_field){
-        $e=$tool->quickStatusChange($id, $table, $status, $control_field);
 
-    }
+        $e=$tool->quickStatusChange($id, $table, $status, $control_field);
+        echo $e;
+
 }

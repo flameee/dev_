@@ -64,11 +64,13 @@ while( $row=mysqli_fetch_array($query) ) {  // preparing an array
         $user_level="Guest";
     }
 
-    if($row["user_status"]===1){
-        $user_status="<i class='fa fa-check-circle-o tc-main quick-change-status' data-status='1' data-id='".$row['id']."' data-table='users' data-control-field='user_status'></i>";
+    if($row["user_status"]=="1"){
+        //onclick='quickStatusChange(\"0\", \"".$row['id']."\", \"users\", \"user_status\");'
+        $user_status="<a class='quick-change-status' data-status='1' data-id='".$row['id']."' data-table='users' data-control-field='user_status' ><i class='fa fa-check-circle-o tc-main ' id='".$row['id']."'></i></a>";
     }
     else{
-        $user_status="<i class='fa fa-times-circle-o tc-danger quick-change-status' data-status='0' data-id='".$row['id']."' data-table='users' data-control-field='user_status'></i>";
+        //onclick='quickStatusChange(\"1\", \"".$row['id']."\", \"users\", \"user_status\");'
+        $user_status="<a class='quick-change-status' data-status='0' data-id='".$row['id']."' data-table='users' data-control-field='user_status' ><i class='fa fa-check-circle-o tc-danger ' id='".$row['id']."'></i></a>";
     }
     $nestedData=array();
     $nestedData[] = $row["id"];
@@ -81,7 +83,6 @@ while( $row=mysqli_fetch_array($query) ) {  // preparing an array
     $nestedData[] = $user_level;
     $nestedData[] = $user_status;
     $nestedData[] = "<a href='".$abs."users/details/".$row['id']."' target='_blank'><i class='fa fa-search'></i> </a>";
-
     $data[] = $nestedData;
 }
 $json_data = array(

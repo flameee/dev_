@@ -64,13 +64,14 @@ class tools{
 
     public function quickStatusChange($id, $table, $status, $control_field){
         $PDO=$this->conn();
-        $sql="UPDATE $table SET :control_field = :status WHERE id = :id";
+        $sql="UPDATE $table SET $control_field = :user_status WHERE id = :id";
         $q=$PDO->prepare($sql);
-        $q->bindParam(":status", $status, PDO::PARAM_STR,255);
-        $q->bindParam(":control_field", $control_field, PDO::PARAM_STR,255);
-
-        $q->bindParam(":id", $id, PDO::PARAM_STR,255);
+        $q->bindParam(":user_status", $status, PDO::PARAM_STR);
+        $q->bindParam(":id", $id, PDO::PARAM_INT);
         $q->execute();
-        return "ok";
+        if($q->rowCount()==1)
+            return true;
+        else
+            return false;
     }
 }
