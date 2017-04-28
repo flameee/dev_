@@ -9,6 +9,8 @@
 <script src="<?php echo $abs?>assets/js/bootstrap.min.js"></script>
 <script src="<?php echo $abs?>assets/datatables.js"></script>
 <script src="<?php echo $abs?>assets/js/custom.js"></script>
+<script>
 
+</script>
 </body>
 </html>

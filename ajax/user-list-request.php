@@ -66,11 +66,11 @@ while( $row=mysqli_fetch_array($query) ) {  // preparing an array
 
     if($row["user_status"]=="1"){
         //onclick='quickStatusChange(\"0\", \"".$row['id']."\", \"users\", \"user_status\");'
-        $user_status="<a class='quick-change-status' data-status='1' data-id='".$row['id']."' data-table='users' data-control-field='user_status' ><i class='fa fa-check-circle-o tc-main ' id='".$row['id']."'></i></a>";
+        $user_status="<button class='quickChangeStatus quickChangeStatus-".$row['id']."' data-status='0' data-id='".$row['id']."' data-table='users' data-control-field='user_status' ><i class='fa fa-check-circle-o tc-main ' id='".$row['id']."'></i></button>";
     }
     else{
         //onclick='quickStatusChange(\"1\", \"".$row['id']."\", \"users\", \"user_status\");'
-        $user_status="<a class='quick-change-status' data-status='0' data-id='".$row['id']."' data-table='users' data-control-field='user_status' ><i class='fa fa-check-circle-o tc-danger ' id='".$row['id']."'></i></a>";
+        $user_status="<button class='quickChangeStatus quickChangeStatus-".$row['id']."' data-status='1' data-id='".$row['id']."' data-table='users' data-control-field='user_status' ><i class='fa fa-check-circle-o tc-danger ' id='".$row['id']."'></i></button>";
     }
     $nestedData=array();
     $nestedData[] = $row["id"];
