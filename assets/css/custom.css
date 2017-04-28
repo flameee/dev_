@@ -74,4 +74,7 @@ label {
 #users-list-ajax td:last-child {
   text-align: center; }
 
+#users-list-ajax_filter {
+  float: right; }
+
 /*# sourceMappingURL=custom.css.map */

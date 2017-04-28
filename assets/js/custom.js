@@ -33,6 +33,7 @@ function quickStatusChange(dataStatus, dataID, dataTable, dataControlField) {
 }
 
 $(document).ready(function () {
+
     /*$(".user-list-clear").click(function () {
 
         if(confirm("Svuotare l'elenco degli utenti?")){

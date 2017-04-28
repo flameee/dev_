@@ -43,19 +43,29 @@ if(isset($_SESSION["loginUsername"]) && isset($_SESSION["loginPassword"]))
     <title>Basic Admin Template</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.7.0/metisMenu.min.css">
     <!-- Bootstrap -->
     <link href="<?php echo $abs?>assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo $abs?>assets/css/oneui.css" rel="stylesheet">
     <link href="<?php echo $abs?>assets/css/custom.css" rel="stylesheet">
-    <!--<link href="<?php /*echo $abs*/?>assets/css/font-awesome.css" rel="stylesheet">-->
-    <link href="<?php echo $abs?>assets/DataTables-1.10.13/css/dataTables.bootstrap.css" rel="stylesheet">
 
+
+
+    <!--<link href="<?php /*echo $abs*/?>assets/css/font-awesome.css" rel="stylesheet">-->
+    <!--<link href="<?php /*echo $abs*/?>assets/DataTables-1.10.13/css/dataTables.bootstrap.css" rel="stylesheet">-->
+
+
+
+    <!--js-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
     <script src="https://use.fontawesome.com/c4a07f7f66.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <body>
 <?php
@@ -80,4 +90,5 @@ if($routes[2]!="loginCheck"){
         exit;
     }
 }
+
 

@@ -6,5 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="c4a07f7f66" level="application" />
+    <orderEntry type="library" name="metisMenu" level="application" />
   </component>
 </module>
